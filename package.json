@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "app": "tsx app/src/server.ts",
+  "test": "playwright test",
+  "gate": "tsx eval/src/gate.ts",
+  "compare": "tsx eval/src/compare.ts",
+  "labels:export": "tsx eval/src/labels-export.ts",
+  "labels:label": "tsx eval/src/labels-label.ts",
+  "judge:calibrate": "tsx eval/src/judge-calibrate.ts",
+  "typecheck": "tsc --noEmit"
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
